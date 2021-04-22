@@ -1,0 +1,10 @@
+applications:
+  - path: target/quarkus-demo-1.0-SNAPSHOT-runner.jar
+    name: quarkus-demo-jvm
+    buildpacks:
+      - java_buildpack_offline_rabo_latest
+    memory: 768M
+    disk_quota: 512M
+    health-check-type: process
+    env:
+      quarkus.application.name: quarkus-demo-jvm

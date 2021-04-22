@@ -1,0 +1,8 @@
+applications:
+  - path: .
+    name: quarkus-demo
+    buildpacks:
+      - binary_buildpack
+    memory: 32M
+    health-check-type: process
+    command: ./target/quarkus-demo-1.0-SNAPSHOT-runner
